@@ -1,0 +1,39 @@
+// Versões em Portugol dos desafios práticos de utilidades.py.
+programa
+{
+    funcao vazio converter_temperatura(real celsius)
+    {
+        real fahrenheit = celsius * 9 / 5 + 32
+        real kelvin = celsius + 273.15
+        escreva(celsius, " C = ", fahrenheit, " F e ", kelvin, " K\n")
+    }
+
+    funcao logico validar_senha(cadeia senha)
+    {
+        // Regra simplificada: a senha precisa ter ao menos 8 caracteres.
+        se (senha.tamanho() >= 8) {
+            retorne verdadeiro
+        }
+        retorne falso
+    }
+
+    funcao real calcular_total_caixa(real preco_1, real preco_2, real preco_3)
+    {
+        // Em Python usamos *precos; aqui recebemos preços definidos.
+        retorne preco_1 + preco_2 + preco_3
+    }
+
+    funcao vazio mostrar_ficha(cadeia nome, inteiro idade, cadeia curso)
+    {
+        // Em Python, **dados recebe campos nomeados em um dicionário.
+        escreva("Nome: ", nome, " | Idade: ", idade, " | Curso: ", curso, "\n")
+    }
+
+    funcao inicio()
+    {
+        converter_temperatura(25)
+        escreva("Senha valida? ", validar_senha("Python2026"), "\n")
+        escreva("Total: ", calcular_total_caixa(10.5, 7.25, 2.0), "\n")
+        mostrar_ficha("Lucas", 20, "Python")
+    }
+}

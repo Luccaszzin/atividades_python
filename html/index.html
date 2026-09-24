@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Blog</title>
+    <!-- A Semana 2 usa este arquivo CSS para estilizar o HTML. -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho do blog. -->
+    <header>
+        <h1>Meu Blog de Tecnologia</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal do blog. -->
+    <main id="inicio">
+        <section id="artigos">
+            <article>
+                <h2>Aprendendo HTML</h2>
+                <p>HTML é a linguagem usada para criar a estrutura de uma página na internet.</p>
+                <img src="https://via.placeholder.com/600x250" alt="Imagem de exemplo sobre HTML">
+            </article>
+
+            <article>
+                <h2>Por que estudar programação?</h2>
+                <p>Programar ajuda a criar sites, aplicativos e soluções para problemas do dia a dia.</p>
+                <img src="https://via.placeholder.com/600x250" alt="Imagem de exemplo sobre programação">
+            </article>
+        </section>
+    </main>
+    <aside id="inscricao">
+        <form method="get">
+            <fieldset>
+                <legend>Inscreva-se no blog</legend>
+
+                <div class="linha">
+                    <div class="campo">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" minlength="3" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" max="120" required>
+
+                <label for="assunto">Assunto de interesse:</label>
+                <select id="assunto" name="assunto" required>
+                    <option value="">Escolha um assunto</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="python">Python</option>
+                </select>
+
+                <label for="termos">
+                    <input type="checkbox" id="termos" name="termos" required>
+                    Aceito os termos.
+                </label>
+
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </aside>
+
+    <footer>
+        <p>Meu Blog de Tecnologia</p>
+    </footer>
+</body>
+
+</html>

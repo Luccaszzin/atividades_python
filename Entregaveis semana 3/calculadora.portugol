@@ -1,0 +1,37 @@
+// Versão em Portugol do módulo calculadora.py.
+programa
+{
+    funcao real somar(real a, real b)
+    {
+        retorne a + b
+    }
+
+    funcao real subtrair(real a, real b)
+    {
+        retorne a - b
+    }
+
+    funcao real multiplicar(real a, real b)
+    {
+        retorne a * b
+    }
+
+    funcao real dividir(real a, real b)
+    {
+        // Verifica o divisor antes de fazer a divisão.
+        se (b == 0) {
+            escreva("Erro: divisao por zero")
+            retorne 0.0
+        }
+        retorne a / b
+    }
+
+    funcao inicio()
+    {
+        escreva("somar(2,3) = ", somar(2, 3), "\n")
+        escreva("subtrair(5,2) = ", subtrair(5, 2), "\n")
+        escreva("multiplicar(3,4) = ", multiplicar(3, 4), "\n")
+        escreva("dividir(10,2) = ", dividir(10, 2), "\n")
+        escreva("dividir(10,0) = ", dividir(10, 0), "\n")
+    }
+}

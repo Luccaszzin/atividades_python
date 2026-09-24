@@ -1,0 +1,29 @@
+// Versão em Portugol do classificador de cliente.
+programa
+{
+    funcao inicio()
+    {
+        inteiro idade
+        real renda
+
+        escreva("Digite a idade do cliente: ")
+        leia(idade)
+        escreva("Digite a renda anual do cliente: R$ ")
+        leia(renda)
+
+        // Primeiro verificamos se a idade permite a classificação.
+        se (idade < 18) {
+            escreva("Categoria: Não classificado")
+        } senao se (renda >= 1000000) {
+            escreva("Categoria: Diamante")
+        } senao se (renda >= 500000) {
+            escreva("Categoria: Ouro")
+        } senao se (renda >= 100000) {
+            escreva("Categoria: Prata")
+        } senao se (renda >= 50000) {
+            escreva("Categoria: Bronze")
+        } senao {
+            escreva("Categoria: Não classificado")
+        }
+    }
+}

@@ -1,0 +1,20 @@
+// Comparação com fatorial.py: esta versão usa repetição, não recursão.
+programa
+{
+    funcao inteiro fatorial_com_repeticao(inteiro numero)
+    {
+        inteiro resultado = 1
+
+        // Multiplica de 1 até o número informado.
+        para (inteiro contador = 1; contador <= numero; contador++) {
+            resultado = resultado * contador
+        }
+
+        retorne resultado
+    }
+
+    funcao inicio()
+    {
+        escreva("5! = ", fatorial_com_repeticao(5))
+    }
+}

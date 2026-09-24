@@ -1,0 +1,29 @@
+// Versão em Portugol do sistema de autenticação.
+programa
+{
+    funcao inicio()
+    {
+        cadeia senha_correta = "Python123"
+        cadeia senha_digitada
+        inteiro tentativas = 0
+        logico acesso_liberado = falso
+
+        // Repete até acertar a senha ou usar as três tentativas.
+        enquanto (tentativas < 3 e acesso_liberado == falso) {
+            escreva("Digite a senha: ")
+            leia(senha_digitada)
+
+            se (senha_digitada == senha_correta) {
+                acesso_liberado = verdadeiro
+                escreva("Acesso liberado.\n")
+            } senao {
+                tentativas++
+                escreva("Senha incorreta.\n")
+            }
+        }
+
+        se (acesso_liberado == falso) {
+            escreva("Acesso bloqueado após 3 tentativas incorretas.")
+        }
+    }
+}

@@ -1,0 +1,36 @@
+// Versão em Portugol da análise de cinco números.
+programa
+{
+    funcao inicio()
+    {
+        real numero
+        real soma = 0
+        real maior_numero = 0
+        real menor_numero = 0
+
+        // O contador vai de 1 até 5, lendo cinco números.
+        para (inteiro contador = 1; contador <= 5; contador++) {
+            escreva("Digite o ", contador, "º número: ")
+            leia(numero)
+            soma = soma + numero
+
+            // No primeiro número, inicializamos maior e menor.
+            se (contador == 1) {
+                maior_numero = numero
+                menor_numero = numero
+            } senao {
+                se (numero > maior_numero) {
+                    maior_numero = numero
+                }
+                se (numero < menor_numero) {
+                    menor_numero = numero
+                }
+            }
+        }
+
+        escreva("Soma: ", soma, "\n")
+        escreva("Média: ", soma / 5, "\n")
+        escreva("Maior número: ", maior_numero, "\n")
+        escreva("Menor número: ", menor_numero)
+    }
+}

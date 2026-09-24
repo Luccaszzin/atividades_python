@@ -1,0 +1,70 @@
+/* Estilos básicos da página. */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header,
+footer {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: #1565c0;
+}
+
+nav a {
+    margin: 10px;
+    color: white;
+}
+
+main,
+aside {
+    max-width: 800px;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+article img {
+    max-width: 100%;
+}
+
+/* Os campos do formulário ficam um abaixo do outro. */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #1565c0;
+    border: 0;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #0d47a1;
+}
+
+/* Bônus: nome e e-mail ficam lado a lado. */
+.linha {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.campo {
+    width: 50%;
+}
