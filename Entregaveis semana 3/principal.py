@@ -1,4 +1,4 @@
-"""Arquivo principal: demonstra o uso dos módulos da Semana 03."""
+#Arquivo principal: demonstra o uso dos módulos da Semana 03.
 
 import calculadora as calc
 import utilidades as util
