@@ -18,7 +18,7 @@ def executar_exemplos():
     print(f"25 °C = {temperaturas['fahrenheit']} °F")
     print(f"25 °C = {temperaturas['kelvin']} K")
 
-    senha = "Python2026"
+    senha = "Flamengo2026"
     print(f"A senha '{senha}' é válida? {util.validar_senha(senha)}")
     total = util.calcular_total_caixa(10.50, 7.25, 2.00)
     print(f"Total do caixa: R$ {total:.2f}")
