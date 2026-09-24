@@ -1,8 +1,8 @@
 """Exemplo de fatorial usando recursão."""
 
 
-def fatorial(numero):
-    """Calcula o fatorial de um número inteiro não negativo."""
+def fatorial(numero): #Calcula o fatorial de um número inteiro não negativo.
+    
     if numero < 0:
         raise ValueError("O fatorial não existe para números negativos.")
 
